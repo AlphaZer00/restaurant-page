@@ -1,6 +1,4 @@
 const loadHomePage = () => {
-    const content = document.getElementById('content');
-
     const header = document.createElement('h1');
     const paragraph = document.createElement('p');
     const img = document.createElement('img');
