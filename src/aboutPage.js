@@ -1,10 +1,7 @@
 const loadAboutPage = () => {
-    const header = document.createElement('h1');
     const aboutUs = document.createElement('div');
     const emailPrompt = document.createElement('div');
     const contactInfo = document.createElement('div');
-
-    header.textContent = "Big Bobby's Brunch";
 
     const aboutTitle = document.createElement('h2');
     const aboutP = document.createElement('p');
@@ -33,7 +30,7 @@ const loadAboutPage = () => {
     hours.textContent = 'Mon - Thu: 6AM - 3PM\nFri - Sun: 8AM - 5PM';
     contactInfo.append(contactTitle, address, phoneNum, hours);
 
-    content.append(header, aboutUs, emailPrompt, contactInfo);
+    content.append(aboutUs, emailPrompt, contactInfo);
 }
 
 export default loadAboutPage;
