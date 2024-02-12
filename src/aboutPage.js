@@ -2,6 +2,13 @@ const loadAboutPage = () => {
     const aboutUs = document.createElement('div');
     const emailPrompt = document.createElement('div');
     const contactInfo = document.createElement('div');
+    const containerDiv = document.createElement('div');
+
+    aboutUs.classList.add('about');
+    emailPrompt.classList.add('email');
+    contactInfo.classList.add('contact');
+    containerDiv.classList.add('contact-container');
+    containerDiv.append(emailPrompt, contactInfo);
 
     const aboutTitle = document.createElement('h2');
     const aboutP = document.createElement('p');
@@ -23,14 +30,16 @@ const loadAboutPage = () => {
     const contactTitle = document.createElement('h2');
     const address = document.createElement('p');
     const phoneNum = document.createElement('p');
-    const hours = document.createElement('p');
+    const hours1 = document.createElement('p');
+    const hours2 = document.createElement('p');
     contactTitle.textContent = 'Contact Us';
-    address.textContent = '123 Main St\nCityville, NY 10023';
+    address.textContent = '123 Main St Cityville, NY 10023';
     phoneNum.textContent = '+1(212)555-8012';
-    hours.textContent = 'Mon - Thu: 6AM - 3PM\nFri - Sun: 8AM - 5PM';
-    contactInfo.append(contactTitle, address, phoneNum, hours);
+    hours1.textContent = 'Mon - Thu: 6AM - 3PM';
+    hours2.textContent = 'Fri - Sun: 8AM - 5PM';
+    contactInfo.append(contactTitle, address, phoneNum, hours1, hours2);
 
-    content.append(aboutUs, emailPrompt, contactInfo);
+    content.append(aboutUs, containerDiv);
 }
 
 export default loadAboutPage;
