@@ -25,6 +25,7 @@ const loadAboutPage = () => {
     emailInput.required = true;
     const emailButton = document.createElement('button');
     emailButton.setAttribute('type', 'submit');
+    emailButton.innerText=('Submit');
     emailPrompt.append(emailTitle, emailInput, emailButton);
 
     const contactTitle = document.createElement('h2');
