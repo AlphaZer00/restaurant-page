@@ -3,12 +3,16 @@
 
 html {
     font-family: 'Raleway', sans-serif;
+    height: 100%;
     width: 100%;
 }
 
 body {
     margin: 0px;
     width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -142,8 +146,8 @@ div>div>div>h3 {
     transform: scale(.95);
 }
 
+/* Transition */
 #content.transition {
-    transform: translateY(-20px);
     animation: fade-in .5s forwards;
 }
 
@@ -154,5 +158,28 @@ div>div>div>h3 {
 
     0% {
         transform: translateY(20px);
+        opacity: .2;
     }
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #264653;
+    padding: 1rem 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+footer img {
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+footer img:hover {
+    transform: scale(1.2);
 }
