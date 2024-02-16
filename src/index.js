@@ -23,6 +23,11 @@ function switchTabs(e) {
     } else if (e.target.id === 'about-button') {
         loadAboutPage();
     }
+    content.classList.add('transition');
+    setTimeout(() => {
+        content.classList.remove('transition');
+    }
+    ,500);
 }
 
 addNavEventListener();
