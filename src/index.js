@@ -2,6 +2,8 @@ import loadHomePage from './homePage';
 import loadMenuPage from './menuPage';
 import loadAboutPage from './aboutPage';
 import './style.css';
+import gh from './github-mark.svg';
+import ldn from './linkedin.svg';
 
 loadHomePage();
 function addNavEventListener() {
@@ -31,3 +33,9 @@ function switchTabs(e) {
 }
 
 addNavEventListener();
+
+const GHimage = document.querySelector('a[href*="https://github.com/AlphaZer00"]');
+GHimage.innerHTML=`<img src="${gh}" alt="GitHub">`;
+
+const LIimage = document.querySelector('a[href*="https://linkedin.com/in/batuhan-dasdemir"]');
+LIimage.innerHTML=`<img src="${ldn}" alt="LinkedIn">`
