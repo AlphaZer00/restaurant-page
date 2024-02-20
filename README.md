@@ -1,4 +1,4 @@
 # restaurant-page
-![restaurant-page](/../gifs/restaurant-page.gif)
+![restaurant-page](/gifs/restaurant-page.gif)
 
 
